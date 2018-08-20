@@ -1,0 +1,7 @@
+---
+- hosts: linux-servers
+  gather_facts: false
+  vars:
+    ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
+  roles:
+    - role: linux-server-example-role
